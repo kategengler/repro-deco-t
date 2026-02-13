@@ -1,12 +1,14 @@
 import { pageTitle } from 'ember-page-title';
-import { WelcomePage } from 'ember-welcome-page';
+import featureFlag from 'ember-feature-flags/helpers/feature-flag';
 
 <template>
   {{pageTitle "TestNewest"}}
 
   {{outlet}}
 
-  {{! The following component displays Ember's default welcome message. }}
-  <WelcomePage @extension="gjs" />
-  {{! Feel free to remove this! }}
+{{#if (featureFlag 'this-is-it')}}
+  This is it!
+{{else}}
+  Not it
+{{/if}}
 </template>
