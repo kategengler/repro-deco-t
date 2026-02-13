@@ -1,7 +1,14 @@
 # repro-deco-t
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Reproduces the error 
+
+```
+✘ [ERROR] module not found file:///Users/katie/dev/my-app/node_modules/.pnpm/decorator-transforms@2.3.1_@babel+core@7.29.0/node_modules/decorator-transforms/dist/runtime.hbs [plugin embroider-esbuild-resolver]
+```
+
+Run `pnpm start` and visit the url to see the error.
+
+All code is in app/templates/application.gjs
 
 ## Prerequisites
 
